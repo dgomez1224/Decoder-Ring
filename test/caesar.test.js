@@ -26,7 +26,6 @@ describe("caesar", () => {
   it("should return a string if shift value between -25 and 25 and does not equal 0", () => {
     const actual = caesar("test", 22);
     expect(actual).to.be.string;
-    
   });
   // describe("string errors", () => {
   it("should ignore capital letters", () => {
@@ -40,10 +39,9 @@ describe("caesar", () => {
     const actual = caesar("should maintain spaces throughout", 4);
     expect(actual).to.equal(expected);
   });
-  it('should wrap around to the front of the alphabet', () => {
-    const expected = 'abc';
-    const actual = caesar('xyz', 3);
-    expect(actual).to.equal(expected)
-});
-
+  it("should wrap around to the front of the alphabet", () => {
+    const expected = "abc";
+    const actual = caesar("xyz", 3);
+    expect(actual).to.equal(expected);
+  });
 });

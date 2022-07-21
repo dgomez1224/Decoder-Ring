@@ -46,7 +46,7 @@ const polybiusModule = (function () {
       for (let i = 0; i < input.length; i++) {
         let code = input[i];
         for (let j = 0; j < square.length; j++)
-        //checks to see if the square array has the given character and pushes the respective number into the coded array.
+          //checks to see if the square array has the given character and pushes the respective number into the coded array.
           if (square[j].letter.includes(code.toLowerCase())) {
             coded.push(square[j].number);
           }

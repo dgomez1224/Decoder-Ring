@@ -36,7 +36,6 @@ const caesarModule = (function () {
     }
     //Converts the coded array into a string and returns it.
     return String.fromCharCode(...coded);
-    
   }
   return {
     caesar,
